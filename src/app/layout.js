@@ -4,20 +4,20 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "DAMS Research Lab Privacy Policies!",
+  title: "Intro To React Workshop",
   description:
-    "A research project by Darsh Patel, Sean Belon, and Peter Gatira at the DAMS Research Lab at University of Maryland, Baltimore County",
+    "An Intro to the ReactJS Library by Darsh Patel during hackUMBC 2024 at the University of Maryland, Baltimore County",
   keywords:
-    "DAMS Research Lab, DAMS, UMBC, Research",
+    "React, Intro, Workshop, Darsh Patel",
   author: "Darsh Patel",
   robots: "index, follow",
   charset: "UTF-8",
   openGraph: {
     type: "website",
     url: "",
-    title: "DAMS Research Lab Project",
+    title: "Intro To React Workshop",
     description:
-      "A research project by Darsh Patel, Sean Belon, and Peter Gatira at the DAMS Research Lab at University of Maryland, Baltimore County",
+      "An Intro to React Workshop by Darsh Patel during hackUMBC 2024 at the University of Maryland, Baltimore County",
     image: "",
   },
 };

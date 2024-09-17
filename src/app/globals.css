@@ -42,12 +42,12 @@ body {
 
 .before-content::before {
   content: "{";
-  color: #ffffff;
+  color: #00fff7;
   margin-right: 14px;
 }
 
 .before-content::after {
   content: "}";
-  color: #ffffff;
+  color: #00fff7;
   margin-left: 14px;
 }

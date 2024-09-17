@@ -40,7 +40,7 @@ export default function Navbar() {
               smooth="true"
               href="#home"
             >
-              <img className="nav-logo light-mode-text" src="research-icon.png" alt="logo" />
+              <img className="nav-logo light-mode-text" src="react-logo.webp" alt="logo" />
             </Link>
             <Link
               id="left-nav-button"
