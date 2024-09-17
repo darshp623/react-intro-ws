@@ -44,13 +44,13 @@ export default function Navbar() {
             </Link>
             <Link
               id="left-nav-button"
-              to="about"
+              to="placeholder"
               smooth="true"
               duration={500}
               className="nav-link light-mode-text"
-              href="#data"
+              href="#placeholder"
             >
-              About
+              Placeholder
             </Link>
             <Link
               id="left-nav-button"
@@ -61,7 +61,7 @@ export default function Navbar() {
               className="nav-link light-mode-text"
               href="#"
             >
-              placeholder
+              Placeholder
             </Link>
             <Link
               id="left-nav-button"
@@ -72,7 +72,7 @@ export default function Navbar() {
               className="nav-link light-mode-text"
               href="#"
             >
-              placeholder
+              Placeholder
             </Link>
           </div>
 
@@ -92,13 +92,13 @@ export default function Navbar() {
           </div>
           <ul className={`menu-links ${isMenuOpen ? "open" : ""} light-mode-text`}>
             <li>
-              <Link href="#about" className="light-mode-text">About</Link>
+              <Link href="#placeholder" className="light-mode-text">Placeholder</Link>
             </li>
             <li>
-              <Link href="#faq" className="light-mode-text">FAQ</Link>
+              <Link href="#placeholder" className="light-mode-text">Placeholder</Link>
             </li>
             <li>
-              <Link href="#sponsors" className="light-mode-text">Sponsors</Link>
+              <Link href="#placeholder" className="light-mode-text">Placeholder</Link>
             </li>
           </ul>
         </div>

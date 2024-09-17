@@ -13,6 +13,8 @@
 
 4. **Install project dependencies:**
    npm install
+   npm install tailwindcss
+   npm install aos
 
 5. **Start the Development Server:**
    npm run dev

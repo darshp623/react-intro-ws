@@ -40,7 +40,7 @@ export default function Home() {
         className="home-container"
         style={{
           background:
-            "radial-gradient(125% 125% at 50% 10%, #000 40%, #fff 100%)",
+            "radial-gradient(125% 125% at 50% 10%, #000 40%, #63e 100%)",
         }}
       >
       </div>
