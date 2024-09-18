@@ -41,7 +41,7 @@ export default function Footer() {
                     </Track>
                 </div>
                 <div className="footer-info">
-                    <p>&copy; 2024 Darsh Patel. All Rights Reserved.</p>
+                    <p>&copy; 2024 hackUMBC. All Rights Reserved.</p>
                     <p className="mt-2">
                       <a href="#" className="footer-link">Privacy Policy</a> |
                       <a href="#" className="footer-link">Terms of Service</a> |

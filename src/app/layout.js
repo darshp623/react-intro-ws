@@ -24,6 +24,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/react-logo.webp" type="image/png" sizes="64x64"/>
+      </head>
       <body className={inter.className}>{children}</body>
     </html>
   );
