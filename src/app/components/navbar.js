@@ -1,6 +1,6 @@
 "use client";
 import React, { useState, useEffect } from "react";
-import "../css/Navbar.css";
+import "../css/navbar.css";
 import Link from "next/link";
 import AOS from "aos";
 import "aos/dist/aos.css";
