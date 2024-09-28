@@ -1,3 +1,4 @@
+/* Base styles */
 .home-page {
     width: 100vw;
     display: flex;
@@ -18,3 +19,190 @@
     text-align: left;
     gap: 1rem;
 }
+
+.section__pic-container {
+    flex-shrink: 0; /* prevents shrinking */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh; /* fixed size for pfp */
+    width: 50vh;
+    border-radius: 50%; /* circular shape */
+}
+
+.section__pic-container img {
+    border-radius: 50%;
+    height: 100%;
+    width: 100%; /* good size */
+}
+
+.section__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    flex-grow: 1; /* ensures text takes all the space */
+}
+
+.section__text p {
+    font-weight: 600;
+}
+
+.section__text__p1 {
+    font-size: 1.5rem; 
+}
+
+.section__text__p2 {
+    font-size: 1.75rem; /* larger text for title */
+    margin-bottom: 1rem;
+}
+
+.title {
+    font-size: 3rem; /* large font and diff color for name*/
+    color: #00fbff;
+    font-weight: bold;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center; 
+    gap: 1rem;
+}
+
+.btn {
+    position: relative;
+    overflow: hidden;
+    font-weight: 600;
+    transition: all 300ms ease;
+    padding: 1rem;
+    width: 10rem;
+    height: 4rem;
+    border-radius: 2rem;
+    border: rgb(43, 182, 213) 0.1rem solid;
+    z-index: 0;
+    color: rgb(0, 0, 0);
+    background-color: white;
+} 
+
+/* button hover effect */
+.btn::before {
+    content: '';
+    position: absolute;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    z-index: -1;
+    transition: all 0.5s ease;
+}
+
+.btn:hover::before {
+    top: 0;
+}
+
+.btn:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.btn-color-1, .btn-color-2 {
+    border: rgb(43, 182, 213) 0.1rem solid;
+} 
+
+/* hover effects for different button colors */
+.btn-color-1:hover, .btn-color-2:hover {
+    background: rgb(0, 132, 255);
+    color: white;
+    border: 0.1rem solid;
+    cursor: pointer;
+}  
+
+/* social media icons */
+#socials-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+
+.icon {
+    width: 40px;
+    cursor: pointer;
+    gap: 1rem;
+}
+
+.icon:hover {
+    scale: 1.3;
+}
+
+@media (prefers-color-scheme: light) {
+    .light-mode-text {
+        color: #fff; 
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    .light-mode-text {
+        color: inherit;
+    }
+}
+
+/* media query for mobile */
+@media (max-width: 768px) {
+    .home-container {
+        flex-direction: column; /* stacks content vertically */
+        align-items: center; /* center-aligns items horizontally */
+        padding: 10px; /* add some padding to avoid content sticking to the edges */
+    }
+
+    .section__pic-container {
+        height: 150px;
+        width: 150px; 
+    }
+
+    .section__pic-container img {
+        margin-bottom: -300px; /*so mobile image position isnt messed up*/
+    }
+
+    .section__text {
+        text-align: center; /* center text on mobile */
+        margin-top: 0.5rem; /* very small margin above the text */
+        margin-bottom: 0; /*no margin needed underneath*/
+    }
+
+    .title {
+        font-size: 2rem; /* adjust the font size for the name */
+        margin: 0.5rem 0; /* add small margins to the title */
+    }
+
+    .section__text__p1, .section__text__p2 {
+        font-size: 1.25rem; /* adjust the font size for paragraphs */
+        margin: 3px; /* remove any margins */
+    }
+
+    .btn {
+        margin-top: 20px;
+        font-size: 0.875rem; /* adjust button font size for mobile */
+        gap: 0rem;
+        scale: .8;
+    }
+
+    #socials-container {
+        justify-content: center; /* centers icons */
+        margin-top: 1rem; /* keep some space above icons */
+    }
+
+    .icon {
+        width: 30px; /* smaller icons on mobile */
+    }
+}
+
+/*light mode*/
+@media (prefers-color-scheme: light) {
+    .home-page {
+        background-color: #fff;
+        color: #121212;
+    }
+}
+
